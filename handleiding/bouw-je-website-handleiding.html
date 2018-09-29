@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Bouw je eigen website!</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="bouw-je-website.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="bouw-je-website-print.css" />
+
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id="pagina">   
+      <header>
+        <h1>Bouw je eigen Website! - Les 1</h1>
+      </header>
+      <main>
+
+        <h2>Wat je nodig hebt</h2>
+        <ul>
+          <li>Een laptop</li>
+          <li>
+            Een tekstverwerker waarin je de code kan schrijven.
+            Wij raden <a href="https://notepad-plus-plus.org/download/v7.5.8.html">Notepad++</a> aan.
+          </li>
+          <li>Een internetbrowser waarin je je website kan bekijken.</li>
+        </ul>
+
+        <h2>De voorbereiding</h2>
+        <p>
+          Laten we de webpagina openen in je internetbrowser om te zien hoe het er nu uitziet.
+          <ul>
+            <li>
+              Ga naar de <code>mijn-eerste-website</code> map 
+            </li> 
+            <li>
+              Open het <code>mijn-website.html</code> bestand door er met je linkermuisknop op te dubbelklikken.
+            </li>
+          </ul>
+          De webpagina ziet er nu zo uit:
+          <figure>
+            <img src="./images/0-0-website-basis.png"/>
+          </figure>
+          Nog niet zo mooi, hè? Maar dat gaan we veranderen!
+        </p>
+        <p id="tekstverwerker">Om de website te kunnen aanpassen moeten we de webpagina in een tekstverwerker openen.
+          <ul>
+            <li>
+              Dit doe je door met je rechtermuisknop op <code>mijn-website.html</code>
+              te drukken...
+            </li>
+            <li>
+              ...dan op "Openen met" te gaan staan met je muis...
+            </li>
+            <li>
+              ...en dan op "Notepad++" te drukken.
+            </li>
+          </ul>
+          <figure>
+            <img src="./images/0-1-notepad-openen.png"/>
+          </figure>          
+        </p>
+
+        <h2>1. Je eigen titel</h2>
+        <p>
+          Je eigen website heeft natuurlijk een eigen titel nodig! 
+          Laten wij er een toevoegen.
+        </p>
+        <p>
+          Als het goed is zie je in Notepad++ nu deze tekst voor je:
+          <code> 
+            <pre>&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title> &lt;/title>
+    &lt;link rel="stylesheet" type="text/css" media="screen" href="stijl.css" />
+  &lt;/head>
+  &lt;body>
+    &lt;div id="pagina">
+      &lt;header>
+        &lt;h1> <mark>Mijn website</mark> &lt;/h1>
+      &lt;/header>
+      &lt;main>
+        
+      &lt;/main>
+      &lt;footer>
+
+      &lt;/footer>
+    &lt;/div>
+  &lt;/body>
+&lt;/html></pre>
+          </code>
+          Verwijder nu <code>Mijn website</code> en zet er de naam van jouw nieuwe website neer.<br>Mijn website gaat over robots, dus ik noem hem <code>Robobots</code><br>
+          Als je nu weer naar je internetbrowser gaat en op "refresh" drukt (<code>Ctr R</code>, <code>F5</code> of op de ronde-pijl-knop) kun je de nieuwe naam van je website zien!
+        </p>
+        <h3>1.1. Wat is er gebeurd?</h3>
+        <p>
+          De <code>.html</code> in de bestandsnaam zegt tegen de computer dat het een website is.<br>
+          De internetbrowser leest vervolgens de tekst en vertaalt het naar "elementen" die het aan jou laat zien.
+        </p>
+        <p>
+          Een element bestaat uit drie dingen:
+          <ul>
+            <li>De "opening tag", zoals <mark><code>&lt;h1></code></mark></li>
+            <li>De inhoud, zoals <mark><code>Mijn website</code></mark></li>
+            <li>De "closing tag", zoals <mark><code>&lt;/h1></code></mark></li>
+          </ul>
+        </p>
+        <p>
+          De "opening tag" zegt tegen de browser welk element hij moet laten zien. In dit geval een grote vette kop ("h1").<br>
+          De "closing tag" zegt tegen de browser dat dit het einde van het element is.<br>
+          Alles wat er tussen staat is de inhoud. Dit is nu "Mijn website".<br>
+          Nu weet de browser dat hij "Mijn website" groot en vet moet laten zien!   
+        </p>
+        <h2>2. Iets om te lezen</h2>
+        <p>
+          Een grote kop is mooi, zo weten de bezoekers de naam van jouw website.<br>
+          Maar, we willen de bezoeker ook iets laten lezen!<br>
+          Daar gaan wij nu voor zorgen.
+        </p>
+        <p>
+          Voeg, tussen de <code>&lt;main></code> en <code>&lt;/main></code> tags, deze code toe:
+          <code>
+            <pre>&lt;p> Deze website gaat over robots. Robots zijn echt supercool. &lt;/p></pre>
+          </code>
+          Kies een inhoud die je leuk lijkt en bij jouw website past.<br>Ik heb gekozen voor een tekst over robots, omdat mijn website daarover gaat.
+        </p>
+        <h3>2.1. Wat is er gebeurd?</h3>
+        <p>
+          Precies wat je voor de vette kop hebt gedaan, maar dan iets anders.<br>
+          Door <code>&lt;p></code> en <code>&lt;/p></code> te gebruiken heb je tegen de browser gezegd dat hij een paragraaf (een stukje tekst) moet laten zien.<br>
+          Deze laat de browser op een andere manier zien dan de kop: kleiner en minder vet.
+        </p>
+        <h2>3. Je website mooi maken!</h2>
+        <p>
+          Nu heb je wat tekst op je webpagina, maar echt mooi ziet het er nog niet uit...<br>
+          Laten wij de website een crazy coole stijl geven!
+        </p>
+        <p>
+          Open <code>stijl.css</code> in Notepad++, deze staat in dezelfde map als <code>mijn-website.html</code>
+          <ul>
+            <li><b>Tip:</b> gebruik dezelfde stappen als in <a href="#tekstverwerker">het openen van <code>mijn-website.html</code></a>!</li>
+          </ul>
+          Dit bestand is nu leeg. Kopieer en plak deze code in het lege bestand:
+          <code>
+            <pre>body { 
+  background: gold;
+}</pre>
+          </code>
+          Als je nu je het CSS bestand opslaat (<code>Ctr S</code>) en de webpagina in je browser refreshed zie je dat de achtergrond in goud is veranderd!<br>
+          Je kan ook een andere kleur kiezen. Verander dan <code>gold</code> in bijvoorbeeld:
+          <div style="margin: 32px;">
+            <span style="background: firebrick; padding: 4px;">firebrick</span>
+            <span style="background: deeppink; padding: 4px;">deeppink</span>
+            <span style="background: dodgerblue; padding: 4px;">dodgerblue</span>
+            <span style="background: darkviolet; padding: 4px;">darkviolet</span>
+            <span style="background: green; padding: 4px;">green</span>
+            <span style="background: orange; padding: 4px;">orange</span>
+            <span style="background: lightpink; padding: 4px;">lightpink</span>
+          </div>
+          <a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/">Op deze website</a> staan nog veel meer kleuren waar je uit kan kiezen!
+        </p>
+        <p>
+          Laten we de tekst ook wat leuker maken.<br>
+          Voeg deze regel code toe na <code>background: gold;</code>:
+          <code>
+            <pre>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</pre>
+          </code>
+          Nu zou je code in <code>stijl.css</code> er zo uit moeten zien:
+          <code>
+            <pre>body { 
+  background: gold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}</pre>
+          </code>
+          Als je nu naar je website gaat en refresht zou je tekst er anders uit moeten zijn.
+        </p>
+        <h3>3.1 Wat is er gebeurd?</h3>
+        <p>
+          De code hier boven ziet er anders uit dan je gewend bent, toch?<br>
+          Dat is omdat dit niet in HTML is geschreven, maar in een taal die CSS heet.<br>
+          Deze taal wordt gebruikt om websites mooi te maken.
+        </p>
+        <p>
+          Ergens boven in <code>mijn-website.html</code> zie je deze regel code staan:
+          <code>
+            <pre>&lt;link rel="stylesheet" type="text/css" media="screen" href="stijl.css" /></pre>
+          </code>
+          Deze regel zegt de internetbrowser dat hij de code in <code>stijl.css</code> moet gebruiken om de website mooi te maken.
+        </p>
+        <h4>3.1.1. CSS</h4>
+        <p>
+          Een CSS-bestand bestaat uit blokken van CSS-regels.
+        </p>
+        <p>
+          Elk blok begint met een "selector".<br>
+          Deze zegt de browser op welke html-elementen hij de volgende regels toe moet passen.<br>
+          In ons geval zijn dit alle <code>body</code> elementen. Dit is er maar één.
+        </p>
+        <p>
+          De code tussen de haakjes <code>{ }</code> zijn de CSS-regels.<br>
+          De eerste regel zegt dat de achtergrond ("background" in Engels) van de body goud moet zijn.<br>
+          De tweede regel zegt dat de tekst een bepaalde vorm (een lettertype of font) moet hebben.
+        </p>
+        <p>
+          Elke CSS-regel bestaat uit: 
+          <ul>
+            <li>Een eigenschap die veranderd moet worden (zoals <code>background</code>)</li>
+            <li>Een dubbele punt <code>:</code></li>
+            <li>Een waarde: wat de eigenschap moet zijn, bijvoorbeeld <code>gold</code></li>
+            <li>Een punt-komma <code>;</code></li>
+          </ul>
+        </p>
+        <p>
+          Er zijn heel veel eigenschappen die je met CSS aan kan passen!<br>
+          We gaan er in de volgende handleiding nog een paar zien.
+        </p>
+        <h2>4. Wat je nog meer kan doen</h2>
+        <p>
+          <ul>
+            <li>Probeer eens wat meer paragrafen toe te voegen.</li>
+            <ul>
+              <li><b>Tip:</b> Een paragraaf is een <code>p</code>-element.</li>
+            </ul>
+            <li>Als je <code>h1</code> eens veranderd in <code>h2</code>? Wat veranderd er dan op je website?</li>
+          </ul>
+        </p>
+      </main>
+      <footer>
+
+      </footer>
+    </div> 
+  </body>
+</html>

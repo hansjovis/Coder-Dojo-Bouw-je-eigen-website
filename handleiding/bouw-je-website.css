@@ -1,0 +1,85 @@
+
+body {
+  background: gold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5em;
+}
+
+#pagina {
+  background: white;
+
+  max-width: 800px;
+  margin: auto;
+
+  box-shadow: 0 8px 8px goldenrod;
+}
+
+header {  
+  padding: 32px;
+
+  border-bottom: 1px solid gray;  
+}
+
+header h1 {
+  margin: 0px;
+}
+
+main {
+  padding: 32px;
+}
+
+pre {
+  background: whitesmoke;
+  border: 1px lightgray solid;
+  padding: 16px;
+}
+
+code {
+  padding: 2px;
+}
+
+
+figure {
+  text-align: center;
+}
+
+img {
+  width: 60%;
+  box-shadow: 0 0 8px gray;
+}
+
+mark.blue {
+  background: rgb(117, 117, 255);
+}
+
+/* Tooltips */
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-text {
+  /* Standaard verborgen */
+  visibility: hidden;
+  opacity: 0;
+
+  /* Waar het staat */
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 25%;
+
+  /* Hoe het er uit ziet */
+  background: rgb(63, 63, 63);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5em;
+
+  padding: 0 6px;
+  border-radius: 2px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
