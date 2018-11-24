@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Bouw je eigen website!  - Les 2</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../_css/bouw-je-website.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="../_css/bouw-je-website-print.css" />
+
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id="pagina">   
+      <header>
+        <h1>Bouw je eigen Website! - Les 2</h1>
+      </header>
+      <main>
+        <p>
+          Alleen tekst op je website is saai 😒.<br>
+          Laten wij een plaatje toevoegen! 😃
+        </p>
+
+        <h2>Wat je nodig hebt.</h2>
+        <ul>
+          <li>
+            Je website nadat je les 1 hebt gedaan.<br>
+            Als je nog niet zover bent is dat niet erg:<br>
+            dan kan je verder gaan met de bestanden in "resultaat na les 1"!
+          </li>
+          <li>Een laptop</li>
+          <li>
+            Een tekstverwerker waarin je de code kan schrijven.
+            Wij raden <a href="https://notepad-plus-plus.org/download/v7.5.8.html">Notepad++</a> aan.
+          </li>
+          <li>Een internetbrowser waarin je je website kan bekijken.</li>
+        </ul>
+
+        <h2 id="voorbereiding">De voorbereiding.</h2>
+        <p>
+          Open je website in je internetbrowser en in Notepad++.<br>
+          Als je niet meer weet hoe dit gaat, lees dan <a target="_blank" href="../les 1/bouw-je-website-handleiding.html#voorbereiding">de voorbereiding van les 1</a> nog een keer 😉.<br>
+          Let op: je website ziet er nu anders uit!
+        </p>
+
+        <h2>1. Een plaatje vinden.</h2>
+        <p>
+          Je hebt natuurlijk eerst een plaatje nodig.<br>
+          Misschien heb je al een plaatje op jouw laptop staan.<br>
+          Je kan er ook een vinden via een zoek-machine zoals Duck Duck Go, of Google.<br>
+          Als je al weet hoe je een plaatje kan vinden, of al een plaatje hebt, mag je deze stap overslaan.<br>          
+        </p>
+        <p>
+          Laten we een plaatje van een puppy zoeken via Duck Duck Go!<br>
+          Volg deze stappen:
+          <ol>
+            <li>Ga naar <a target="_blank" href="https://duckduckgo.com">https://duckduckgo.com</a></li>
+            <li>
+              Typ in wat voor plaatje je wil vinden. Druk dan op de <code>Enter</code> toets.<br>
+              Ik kies nu voor "puppy", maar jij mag natuurlijk iets anders kiezen!<br>              
+            </li>
+            <li>
+              Nu zie je een lijst met websites, maar wij willen een lijst met plaatjes!<br>
+              <div class="waarschuwing"><b>Let op!</b> Kijk eerst even of er bij "Veilig Zoeken" "Streng" staat.<br>Als dit niet zo is, klik dan op "Veilig zoeken" en klik daarna op "Streng". </div>
+              Klik op "Afbeeldingen" om de gevonden plaatjes te zien.
+              <figure>
+                <img alt="" src="images/1-0-duckduckgo.png" />
+              </figure>              
+            </li>
+            <li>
+              Klik nu op een plaatje die je leuk lijkt.<br>
+              Het plaatje wordt nu groot getoond.         
+            </li>
+            <li>
+              Klik nu met je rechter-muisknop op het plaatje.<br>
+              Er verschijnt een menu.
+            </li>
+            <li>
+              Klik op "Afbeelding opslaan als..."
+              <figure>
+                <img alt="" src="images/1-1-afbeelding-opslaan.jpeg" />
+              </figure>
+            </li>
+            <li>
+              Sla het plaatje op in de map "plaatjes".<br>
+              Deze kan je vinden in dezelfde map waarin je website (<code>mijn-website.html</code>) staat!<br>
+              Tip: kies een makkelijke naam bij het opslaan, zoals "puppy".
+            </li>
+          </ol>
+        </p>
+        <h2>2. Je plaatje op je website plaatsen.</h2>
+        <p>
+          Nu hoef je alleen nog het plaatje op jouw website te plaatsen.
+        </p>
+        <p>
+          Voeg daarvoor deze code toe aan <code>mijn-website.html</code>.<br>
+          Doe dit na het <code>&lt;p>...&lt;/p></code> element.
+          <pre><code>&lt;img src="./images/<mark>jouw-plaatje.png</mark>" width="500px" /></code></pre>
+          "jouw-plaatje.png" moet je vervangen door de naam van het plaatje dat je hebt opgeslagen. Bijvoorbeeld "puppy.png".<br>
+          Let er op dat je de punt aan het einde en wat er achter staat (meestal ".png", ".jpg" of ".jpeg") ook meeneemt!               
+        </p>
+        <p>
+          Als je nu je website refreshed in je internetbrowser zie je je plaatje op je website!
+        </p>
+        <h2>3. Wat is er gebeurd?</h2>
+        <p>
+          Je hebt een nieuw element toegevoegd!<br>
+          Een "image" element. Dit type element heeft als opening tag <code>&lt;img></code>.<br>          
+          Maar het element heeft iets extra: <b>attributen</b>!<br>
+          Wat zijn attributen?
+        </p>
+        <p>
+          Attributen geven extra informatie aan een element.<br>
+          Ons plaatje heeft twee attributen:
+          <ul>
+            <li><code>src</code>: dit laat de internetbrowser weten waar hij het plaatje vandaan moet halen.</li>
+            <li><code>width</code>: dit laat de browser weten hoe breed het plaatje op de website moet zijn.</li>
+          </ul>
+          De attributen zijn hier ingekleurd, in geel en blauw:
+          <pre><code>&lt;img <mark>src="./images/jouw-plaatje.png"</mark> <mark class="blue">width="500px"</mark> /></code></pre>
+        </p>
+        <p>
+          Elk attribuut bestaat uit twee delen: een <b>naam</b> en een <b>waarde</b>.<br>
+          <ul>
+            <li>De naam zegt wat er veranderd moet worden.</li>
+            <li>De waarde zegt hoe het veranderd moet worden.</li>
+          </ul>            
+          Een attribuut heeft altijd deze vorm:
+          <pre><code>naam="waarde"</code></pre>
+          De '=' tussen de naam en de waarde, en de '"' voor en na de waarde zijn belangrijk!<br>
+          Anders begrijpt de browser het niet.   
+        </p>
+      </main>
+      <footer>
+
+      </footer>
+    </div> 
+  </body>
+</html>
