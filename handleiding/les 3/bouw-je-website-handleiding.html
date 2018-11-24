@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Les 3 - Bouw je eigen website!</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../_css/bouw-je-website.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="../_css/bouw-je-website-print.css" />
+
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id="pagina">   
+      <header>
+        <h1>Bouw je eigen Website! - Les 3</h1>
+      </header>
+      <main>
+        <p>
+          Op bijna iedere webpagina vind je links.<br>
+          Deze leiden naar een andere pagina op je website,<br>
+          of zelfs naar een volledig andere website.<br>
+          <a href="https://www.wikipedia.nl" target="_blank">Deze link</a> leidt bijvoorbeeld naar Wikipedia!<br>
+          Klik er maar eens op.          
+        </p>
+        <p>
+          In deze les gaan wij een link naar een andere website toevoegen.
+        </p>
+
+        <h2>Wat je nodig hebt.</h2>
+        <ul>
+          <li>
+            Je website nadat je <b>les 2</b> hebt gedaan.<br>
+            Als je nog niet zover bent is dat niet erg:<br>
+            dan kan je verder gaan met de bestanden in <b>"resultaat na les 2"</b>!
+          </li>
+          <li>Een laptop</li>
+          <li>
+            Een tekstverwerker waarin je de code kan schrijven.
+            Wij raden <a href="https://notepad-plus-plus.org/download/v7.5.8.html">Notepad++</a> aan.
+          </li>
+          <li>Een internetbrowser waarin je je website kan bekijken.</li>
+        </ul>
+
+        <h2 id="voorbereiding">De voorbereiding.</h2>
+        <p>
+          Open je website in je internetbrowser en in Notepad++.<br>
+          Als je niet meer weet hoe dit gaat, lees dan <a target="_blank" href="../les 1/bouw-je-website-handleiding.html#voorbereiding">de voorbereiding van les 1</a> nog een keer 😉.<br>
+          Let op: je website ziet er nu anders uit!
+        </p>
+
+        <h2>1. Een link toevoegen.</h2>
+        <p>
+          Voeg deze code toe aan je webpagina:
+          <pre><code>&lt;a <mark>href="https://nl.wikipedia.org/wiki/Robot"</mark>> <mark class="blue">robots</mark> &lt;/a></code></pre>
+          Deze link zal er zo uit zien:<br>
+          <a href="https://nl.wikipedia.org/wiki/Robot" target="_blank">robots</a>
+        </p>
+
+        <h2>2. Wat is er gebeurt?</h2>
+        <p>
+          Een link komt meestal in de vorm van een <code>a</code>-element.<br>
+          Deze heeft minstens twee onderdelen:
+          <ul>
+            <li>
+              Een <code>href</code>-attribuut. (Geel)<br>
+              Hierin moet je het adres van de webpagina invullen waar je naar wil verwijzen.<br>
+              Deze kan je vinden in de adresbalk van de browser (de brede witte balk aan de bovenkant).<br>
+              In dit geval verwijst de link naar <a href="https://nl.wikipedia.org/wiki/Robot" target="_blank">https://nl.wikipedia.org/wiki/Robot</a><br>
+              Maar je mag natuurlijk een andere webpagina kiezen 😃 !<br>
+              <b>Tip</b>: Vergeet niet <code>"</code> om het adres te zetten!               
+            </li>
+            <figure>
+              <img src="./images/1-0-adresbalk.png"/>
+              <figcaption>De adresbalk.</figcaption>
+            </figure>
+            <li>
+              Een link-tekst. (Blauw)<br>
+              Dit is de tekst zoals je hem ziet op de website.<br>
+              In dit geval het woord "robots".
+            </li>            
+          </ul>          
+        </p>
+      </main>
+      <footer>
+
+      </footer>
+    </div> 
+  </body>
+</html>
