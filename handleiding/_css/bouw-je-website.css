@@ -83,3 +83,15 @@ mark.blue {
   visibility: visible;
   opacity: 1;
 }
+
+.waarschuwing {
+  background: orange;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 4px;
+}
+
+.waarschuwing::before {
+  content: url(icons/warningSmall.svg);
+  padding-right: 4px;
+}
